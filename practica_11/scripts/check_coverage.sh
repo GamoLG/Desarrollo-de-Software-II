@@ -26,7 +26,7 @@ if ! command -v lcov &> /dev/null; then
 fi
 
 # Eliminar archivos no evaluables de lógica pura según guía
-lcov --remove coverage/lcov.info \
+lcov --ignore-errors unused,empty --remove coverage/lcov.info \
     'lib/main.dart' \
     'lib/*/*.g.dart' \
     'lib/*/*.freezed.dart' \
