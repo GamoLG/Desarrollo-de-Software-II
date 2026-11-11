@@ -10,6 +10,10 @@ jobs:
   quality_check:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: practica_11
+
     steps:
       - name: Clonar Repositorio
         uses: actions/checkout@v4
@@ -36,12 +40,14 @@ jobs:
       - name: Instalar Herramientas LCOV
         run: sudo apt-get update && sudo apt-get install -y lcov
 
-      - name: Ejecutar Script de Cobertura y Validar Umbral (>= 85%)
-        run: bash scripts/check_coverage.sh
+      - name: Asignar permisos y ejecutar Script de Cobertura (>= 85%)
+        run: |
+          chmod +x scripts/check_coverage.sh
+          bash scripts/check_coverage.sh
 
       - name: Subir Reporte Sanitizado como Artefacto
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: coverage/clean_lcov.info
+          path: practica_11/coverage/clean_lcov.info
