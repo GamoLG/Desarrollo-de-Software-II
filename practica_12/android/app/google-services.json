@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "607694859137",
+    "project_id": "diario-nube-unsaac-2f09d",
+    "storage_bucket": "diario-nube-unsaac-2f09d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607694859137:android:3a6273dda3ab6051a79680",
+        "android_client_info": {
+          "package_name": "com.example.practica_12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607694859137-frq2rb1fj433rfebs2700cnhmhtv3c6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.practica_12",
+            "certificate_hash": "2328be8f9d1db81179e1c077227c3a86a3fcc3ef"
+          }
+        },
+        {
+          "client_id": "607694859137-9q09ugdb3daim10kin9rjc6lta5fqecq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI8V0zW_MUpkqRNrzrmDzUBOUCO5Bfiyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607694859137-9q09ugdb3daim10kin9rjc6lta5fqecq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
